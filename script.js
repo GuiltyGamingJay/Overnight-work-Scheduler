@@ -1,5 +1,5 @@
 // Moment.js
-var currentDate = moment().format('dddd') + ""moment().format("Do MMM YYYY");
+var currentDate = moment().format('dddd') + " " + moment().format("Do MMM YYYY");
 var currentHour = moment().format('h:mm:ss a ');
 
 //text hour Variables
@@ -66,6 +66,43 @@ var interval = setInterval(function() {
     var init7 = JSON.parse(localStorage.getItem("07:00 pm"))
     sevenPm.val(init7);
   } 
+  function background () {
+      
+    $(".form-control").each(function () {
+        var timeTest = parseInt($(this).attr("id"));
+        hour = parseInt(hour);
+        console.log(timeTest);
+        console.log(hour);
+  //      console.log(this);
+        if (hour > timeTest) {
+            $(this).addClass("past");
+        } else if (hour < timeTest) {
+            $(this).addClass("future");
+        } else {
+            $(this).addClass("present");
+        }
+    });
+  }
   
+  $(document).ready(function(){
+    initPage()
+    background()
+  
+    // Buttons (save to Local Storage)
+    $(".saveBtn").on("click", function(){
+      userInput = $(this).siblings(".form-control").val().trim();
+      console.log(userInput);
+      hourSpan = $(this).siblings(".input-group-prepend").text().trim();
+      console.log(hourSpan);
+      localStorage.setItem(hourSpan, JSON.stringify(userInput));
+  
+    })
+    // Button for clear the day
+    $("#clearDay").on("click", function(){
+      localStorage.clear();
+      initPage()
+    }) 
+  
+  });
 
 
