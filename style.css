@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Times New Roman', Times, serifs;
     font-size: 16px;
     line-height: 1;
   }
@@ -39,7 +39,7 @@ body {
   border: none;
 }
 
-.row{
+.time{
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;;
@@ -55,17 +55,17 @@ body {
   }
 
   .past {
-    background-color: #d3d3d3;
+    background-color: #7851a9;
     color: white;
   }
 
   .present {
-    background-color: #ff6961;
+    background-color: #7851a9;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: #7851a9;
     color: white;
   }
 
@@ -73,7 +73,7 @@ body {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06AED5;
+    background-color: rgb(240, 191, 76);
     color: white;
     width: 120px;
     font-size: 20px;
