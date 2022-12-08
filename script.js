@@ -2,17 +2,17 @@
 var currentDate = moment().format('dddd') + " " + moment().format("Do MMM YYYY");
 var currentHour = moment().format('h:mm:ss a');
 
-var nineAm = $("#9am");
-var tenAm = $("#10am");
-var elevenAm = $("#11am");
-var twelvePm = $("#12pm");
-var onePm = $("#13pm");
-var twoPm = $("#14pm");
-var threePm = $("#15pm");
-var fourPm = $("#16pm");
-var fivePm = $("#17pm");
-var sixPm = $("#18pm");
-var sevenPm = $("#19pm");
+var twelveAm = $("#12am");
+var oneAm = $("#01am");
+var twoAm = $("#02am");
+var threeAm = $("#03am");
+var fourAm = $("#04am");
+var fiveAm = $("#05am");
+var sixAm = $("#06am");
+var sevenAm = $("#07am");
+var eightAm = $("#08am");
+var nineAm = $("#09am");
+var TenAm = $("#10am");
 
 var hour = moment().hours();
 var userInput;
@@ -33,37 +33,37 @@ function initPage() {
 
   console.log("Current Hour " + hour);
   var init9 = JSON.parse(localStorage.getItem("12:00 am"));
-  nineAm.val(init9);
+ twelveAm.val(init9);
 
   var init10 = JSON.parse(localStorage.getItem("01:00 am"))
-  tenAm.val(init10);
+  oneAm.val(init10);
   
   var init11 = JSON.parse(localStorage.getItem("02:00 am"))
-  elevenAm.val(init11);
+  twoAm.val(init11);
   
   var init12 = JSON.parse(localStorage.getItem("03:00 am"))
-  twelvePm.val(init12);
+  threeAm.val(init12);
   
   var init1 = JSON.parse(localStorage.getItem("04:00 am"))
-  onePm.val(init1);
+  fourAm.val(init1);
   
   var init2 = JSON.parse(localStorage.getItem("05:00 am"))
-  twoPm.val(init2);
+  fiveAm.val(init2);
   
   var init3 = JSON.parse(localStorage.getItem("06:00 am"))
-  threePm.val(init3);
+  sixAm.val(init3);
  
   var init4 = JSON.parse(localStorage.getItem("07:00 am"))
-  fourPm.val(init4);
+  sevenAm.val(init4);
   
   var init5 = JSON.parse(localStorage.getItem("08:00 am"))
-  fivePm.val(init5);
+  eightAm.val(init5);
   
   var init6 = JSON.parse(localStorage.getItem("09:00 am"))
-  sixPm.val(init6);
+ nineAm.val(init6);
   
   var init7 = JSON.parse(localStorage.getItem("10:00 am"))
-  sevenPm.val(init7);
+  TenAm.val(init7);
 } 
 
 function background () {
