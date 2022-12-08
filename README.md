@@ -1,7 +1,7 @@
-# Work-Day-Scheduler
+# Overnight Work Scheduler
 
 
-05 Third-Party APIs: Work Day Scheduler
+05 Third-Party APIs: Overnight Work Scheduler
 
 Decription
 This is a simple calendar application that allows the user to save events for each hour of the day.
