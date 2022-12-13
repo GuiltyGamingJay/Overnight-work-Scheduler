@@ -14,6 +14,9 @@ var eightAm = $("#08am");
 var nineAm = $("#09am");
 var TenAm = $("#10am");
 
+
+
+
 var hour = moment().hours();
 var userInput;
 var hourSpan;
